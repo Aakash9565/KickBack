@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/list_text_margin">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/play_icon"
+            android:src="@drawable/ic_play_arrow_black_48dp" />
+
+        <TextView
+            android:id="@+id/trailer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_text_margin"
+            android:layout_marginStart="@dimen/list_text_margin"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/list_text_margin"
+        android:layout_marginStart="@dimen/list_text_margin"
+        android:layout_marginRight="@dimen/list_text_margin"
+        android:layout_marginEnd="@dimen/list_text_margin"
+        android:background="@color/cardview_dark_background"/>
+
+</LinearLayout>

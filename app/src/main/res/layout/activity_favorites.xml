@@ -2,10 +2,10 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/mainLayout"
-    tools:context="com.androidbeasts.kickback.MainActivity">
+    tools:context="com.androidbeasts.kickback.FavoritesActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -17,9 +17,10 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:title="@string/app_name"
-            app:titleTextColor="@color/colorAccent"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+            android:title="@string/favorites"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@android:color/white">
 
             <TextView
                 android:id="@+id/toolbar_title"
@@ -27,20 +28,13 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:gravity="start|center_vertical"
-                android:text="@string/app_name"
+                android:text="@string/favorites"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </android.support.v7.widget.Toolbar>
+
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_filter_list_black_48dp" />
+    <include layout="@layout/content_favorites" />
 
 </android.support.design.widget.CoordinatorLayout>

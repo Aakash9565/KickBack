@@ -1,4 +1,28 @@
 <resources>
     <string name="app_name">KickBack</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="content_authority">com.androidbeasts.kickback.app</string>
+
+    <!--Content Description-->
+    <string name="movie_icon_name">Movie</string>
+
+    <!--Activity Title-->
+    <string name="movie_detail">Movie Detail</string>
+
+    <string name="sort_by_popular">Most Popular</string>
+    <string name="sort_by_rating">Highest Rated</string>
+
+    <string name="movie_thumbnail">Movie Thumbnail</string>
+    <string name="rating_icon">Rating Icon</string>
+    <string name="play_icon">Play Icon</string>
+
+    <string name="no_internet_message">No Internet Connection!!</string>
+
+    <string name="trailers_title">Trailers:</string>
+    <string name="mark_favorite">Mark as Favorite</string>
+    <string name="marked_favorite">Marked as Favorite</string>
+    <string name="see_reviews">See Reviews</string>
+
+    <!--Favorites-->
+    <string name="favorites">Favorites</string>
 </resources>
