@@ -116,7 +116,7 @@ public class MovieDetailActivity extends AppCompatActivity implements TrailerAda
         linearLayoutManager.setAutoMeasureEnabled(true);
         mTrailersList.setLayoutManager(linearLayoutManager);
         mTrailersList.setHasFixedSize(true);
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             mTrailersList.setNestedScrollingEnabled(false);
             mReviewsList.setNestedScrollingEnabled(false);
         }
